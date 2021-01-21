@@ -8,7 +8,8 @@ import matplotlib.ticker as ticker
 from sklearn import preprocessing
 %matplotlib inline
 
-!wget -O loan_train.csv https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/loan_train.csv
+#Getting data
+#!wget -O loan_train.csv https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/loan_train.csv
 
 df = pd.read_csv('loan_train.csv')
 df.head()
@@ -21,7 +22,7 @@ df.head()
 df['loan_status'].value_counts()
 
 # notice: installing seaborn might takes a few minutes
-!conda install -c anaconda seaborn -y
+#!conda install -c anaconda seaborn -y
 
 import seaborn as sns
 
@@ -142,7 +143,7 @@ from sklearn.metrics import f1_score
 from sklearn.metrics import log_loss
 
 
-!wget -O loan_test.csv https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/loan_test.csv
+#!wget -O loan_test.csv https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/loan_test.csv
 
 test_df = pd.read_csv('loan_test.csv')
 test_df.head()
